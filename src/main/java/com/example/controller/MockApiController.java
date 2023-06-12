@@ -481,9 +481,9 @@ public class MockApiController {
         );
 
         responseBody.setTransactions(transactions); // Initialize the transactions list
-        responseBody.setBalanceAtStart((long) transactions.size());
+        responseBody.setBalanceAtStart(100L);
         responseBody.setTotalRecord(580L);
-        responseBody.setCount(10L);
+        responseBody.setCount((long) transactions.size());
         return responseBody;
     }
 
